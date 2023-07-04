@@ -1,0 +1,9 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form method="post" action="/HomeController/Index">
+    <input type="text" name="message" />
+    <button type="submit">submit</button>
+    <p>@Model.SummittedMessage</p>
+</form>
